@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lisbon Quiz Game</title>
+</head>
+<body>
+
+	<h1>Lisbon Quiz Game</h1>
+
+	<form id="quiz-form">
+
+		<!-- Question 1 -->
+		<fieldset>
+			<legend>Question 1: What is the name of the famous tower in Lisbon?</legend>
+			<label>
+				<input type="radio" name="q1" value="a" required> Torre del Sol
+			</label><br>
+			<label>
+				<input type="radio" name="q1" value="b" required> Torre de Belém
+			</label><br>
+			<label>
+				<input type="radio" name="q1" value="c" required> Torre de Lisboa
+			</label><br>
+		</fieldset>
+
+		<!-- Question 2 -->
+		<fieldset>
+			<legend>Question 2: Which famous explorer was born in Lisbon?</legend>
+			<label>
+				<input type="radio" name="q2" value="a" required> Christopher Columbus
+			</label><br>
+			<label>
+				<input type="radio" name="q2" value="b" required> Vasco da Gama
+			</label><br>
+			<label>
+				<input type="radio" name="q2" value="c" required> Ferdinand Magellan
+			</label><br>
+		</fieldset>
+
+		<!-- Question 3 -->
+		<fieldset>
+			<legend>Question 3: Which river runs through Lisbon?</legend>
+			<label>
+				<input type="radio" name="q3" value="a" required> Tagus River
+			</label><br>
+			<label>
+				<input type="radio" name="q3" value="b" required> Douro River
+			</label><br>
+			<label>
+				<input type="radio" name="q3" value="c" required> Tejo River
+			</label><br>
+		</fieldset>
+
+		<!-- Submit button -->
+		<button type="submit" autofocus>Submit</button>
+
+	</form>
+
+	<!-- Script to check the answers and display the result -->
+	<script>
+		document.querySelector("#quiz-form").addEventListener("submit", function(event) {
+			event.preventDefault();
+
+			let score = 0;
+
+			// Check the answer of question 1
+			if (document.querySelector('input[name="q1"]:checked').value === "b") {
+				score += 1;
+			}
+
+			// Check the answer of question 2
+			if (document.querySelector('input[name="q2"]:checked').value === "b") {
+				score += 1;
+			}
+
+			// Check the answer of question 3
+			if (document.querySelector('input[name="q3"]:checked').value === "a") {
+				score += 1;
+			}
+
+			// Display the result
+			let result = "You scored " + score + " out of 3.";
+			alert(result);
+		});
+	</script>
+
+	<!-- Additional question with datalist -->
+	<fieldset>
+		<legend>Question 4: What is the name of the famous hill in Lisbon?</legend>
+		<label>
+			<input type="text" list="hills" name="q4" placeholder="Type your answer here" maxlength="20" required>
+	
