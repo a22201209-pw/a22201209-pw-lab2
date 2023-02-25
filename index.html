@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Pedro Gonçalves">
-		<meta name="description" content="Website sobre Lisboa">
-		<meta name="keywords" content="Lisboa">
 
-		<style>
-			.container {
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Pedro Gonçalves">
+	<meta name="description" content="Website sobre Lisboa">
+	<meta name="keywords" content="Lisboa">
+
+	<style>
+		.container {
 			width: 1024px;
 			margin: 0 auto;
-			}
+		}
+	</style>
+</head>
 
-			</style>
-	</head>
-	<body>
-		<div class="container" >
-				<h1>Lisboa</h1>
+<body>
+	<header>
+		<div class="container">
+			<h1>Lisboa</h1>
+			<figure>
 				<img src="images/lisboa.jpg" alt="Lisboa">
-				<br>
-				<h2>Introdução</h2>
-				<p>Cidade marvilhosa à beira Tejo.</p>
+				<figcaption>Fig1. - Cidade Lisboa.</figcaption>
+			</figure>
+			<br>
+			<h2>Introdução</h2>
+			<p>Cidade marvilhosa à beira Tejo.</p>
 		</div>
-		<br>
+	</header>
+	<nav>
 		<div class="container">
 			<p>
 				<a href="index.html"><b>Introdução</b></a>
@@ -30,15 +36,29 @@
 				<a href="multimedia.html">Multimedia</a>
 				<a href="info.html">Informação</a>
 			</p>
-			<br>
-			<p>
+		</div>
+	</nav>
+	<main>
+		<section>
+			<div class="container">
+				<br>
+				<p>
 				<ul>
-					<li>Na página <a href="local.html">localização</a> vai encontrar um mapa com a localização da cidade de Lisboa</li>
-					<li>Na página <a href="multimedia.html">multimedia</a> vai encontrar um video de apresentação da cidade de Lisboa</li>
-					<li>Na página <a href="info.html">informação</a> vai encontrar mais informações sobre a cidade de Lisboa</li>
+					<li>Na página <a href="local.html">localização</a> vai encontrar um mapa com a localização da cidade
+						de Lisboa</li>
+					<li>Na página <a href="multimedia.html">multimedia</a> vai encontrar um video de apresentação da
+						cidade de Lisboa</li>
+					<li>Na página <a href="info.html">informação</a> vai encontrar mais informações sobre a cidade de
+						Lisboa</li>
 				</ul>
 				<img src="images/intro.png">
-			</p>
-		</div>
-	</body>
+				</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<span>Pedro Gonçalves - a22201209 - ULHT - 2023</span>
+	</footer>
+</body>
+
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Pedro Gonçalves">
+	<meta name="description" content="Website sobre Lisboa">
+	<meta name="keywords" content="Lisboa">
+
+	<style>
+		.container {
+			width: 1024px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Lisboa</h1>
+			<figure>
+				<img src="images/lisboa.jpg" alt="Lisboa">
+				<figcaption>Fig1. - Cidade Lisboa.</figcaption>
+			</figure>
+		</div>
+	</header>
+	<nav>
+		<div class="container">
+			<p>
+				<a href="index.html">Introdução</a>
+				<a href="local.html">Localização</a>
+				<a href="multimedia.html">Multimedia</a>
+				<a href="info.html">Informação</a>
+				<a href="quizz.html"><b>Quizz</b></a>
+			</p>
+		</div>
+	</nav>
+	<main>
+		<section>
+			<div class="container">
+				<h3>Quizz</h3>
+				<p>
+					<span>Bem-vindo à nossa página de quizz sobre esta cidade incrível, <b>LISBOA</b>! </br>
+						Neste quizz, você terá algumas perguntas para responder e verificar se conhece bem essa cidade.
+						</br>
+						Se você acha que sabe tudo sobre essa cidade, chegou a hora de provar isso! Divirta-se e boa
+						sorte no nosso quizz!</span>
+				</p>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<form method="POST" action="mailto: pgmgjm@hotmail.com" enctype="multipart/form-data">
+					<fieldset>
+						<legend>Quizz sobre <b>Lisboa</b></legend>
+
+						<fieldset>
+							<legend>Info</legend>
+
+							<label>
+								Nome:
+								<input type="text" name="nome" placeholder="O seu Nome" size="20" required>
+							</label>
+
+							<label>
+								Apelido:
+								<input type="text" name="apelido" placeholder="O seu Apelido" size="20" required>
+							</label>
+
+							<label>
+								Email:
+								<input type="email" name="email" placeholder="O seu Email" maxlength="200"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="email" required>
+							</label>
+
+						</fieldset>
+					</fieldset>
+
+					<p></p>
+					<fieldset>
+						<legend>Perguntas</legend>
+
+
+						<legend>Pergunta 1: Onde fica o Panteão Nacional?</legend>
+						<label>
+							<input type="radio" name="p1" value="a" required> Campo de Santa Clara
+						</label><br>
+						<label>
+							<input type="radio" name="p1" value="b" required> Avenida da Liberdade
+						</label><br>
+						<label>
+							<input type="radio" name="p1" value="c" required> Rossio
+						</label><br>
+						<label>
+							<input type="radio" name="p1" value="d" required> Praça da Figueira
+						</label><br>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 2: Como se chamam os pastéis tão conhecidos de Lisboa?</legend>
+						<select id="p2" name="p2" required>
+							<option value="">Escolha uma opção</option>
+							<option value="a">Pastéis do Rossio</option>
+							<option value="b">Pastéis de Santa Justa</option>
+							<option value="c">Pastéis de Belém</option>
+						</select>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 3: Por cor qual a cor do seu clube que joga em Lisboa?</legend>
+						<label for="color-sample"><input type="image"
+								src="http://verminososporfutebol.com.br/wp-content/uploads/2017/04/Mapa-dos-estadios-de-Lisboa-1.jpg"
+								id="estadios" alt="Estádios de Lisboa" height="60%" width="35%"></label>
+						<p></p>
+						<input type="color" id="p3" name="p3" value="#FFFFFF" required>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 4: Onde fica o Jardim Zoológico de Lisboa?</legend>
+						<label>
+							<input type="checkbox" name="q4" value="a">Belém
+						</label>
+						<label>
+							<input type="checkbox" name="q4" value="b">Vasco da Gama
+						</label>
+						<label>
+							<input type="checkbox" name="q4" value="c">Sete Rios
+						</label>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 5: Em que data ocorreu o Terramoto de Lisboa?</legend>
+						<input type="date" id="p5" name="p5" max="2023-01-01" required>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 6: Em que ano foi inaugurado a Torre de Belém?</legend>
+						<input type="number" id="p6" name="year" min="1500" max="1530" required>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 7: De 1 a 10, quanto avalia a cidade de Lisboa?</legend>
+						<input type="range" id="p7" name="p7" min="1" max="10" step="1" value="5">
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta 8: </legend>
+						<label for="aeroporto">Como se chama o Aeroporto de Lisboa?</label>
+						<input type="text" id="aeroporto" name="aeroporto" list="places" required>
+						<datalist id="places">
+							<option value="Francisco Sá Carneiro">
+							<option value="Aeroporto do Areeiro">
+							<option value="Aeroporto dos Olivais">
+							<option value="Aeroporto de Lisboa ou da Portela">
+						</datalist>
+					</fieldset>
+
+					<p></p>
+
+					<fieldset>
+						<legend>Pergunta Bonus: O que achou deste quizz?</legend>
+						<textarea id="message" name="message" maxlength="200" rows="5" cols="30" required></textarea>
+					</fieldset>
+
+					<p></p>
+
+					<!-- Submit button -->
+					<button type="submit" autofocus>Submit</button>
+
+				</form>
+			</div>
+		</section>
+	</main>
+	<p></p>
+	<footer>
+		<div class="container">
+			<span>Pedro Gonçalves - a22201209 - ULHT - 2023</span>
+		</div>
+	</footer>
+</body>
+
+</html>
