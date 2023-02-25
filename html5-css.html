@@ -7,12 +7,7 @@
     <meta name="description" content="Website sobre Lisboa">
     <meta name="keywords" content="Lisboa">
 
-    <style>
-        .container {
-            width: 1024px;
-            margin: 0 auto;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -23,19 +18,18 @@
                 <img src="images/lisboa.jpg" alt="Lisboa">
                 <figcaption>Fig1. - Cidade Lisboa.</figcaption>
             </figure>
-            <br>
-            <h2>Introdução</h2>
-            <p>Cidade marvilhosa à beira Tejo.</p>
         </div>
     </header>
     <nav>
         <div class="container">
-            <p>
-                <a href="index.html"><b>Introdução</b></a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimedia</a>
-                <a href="info.html">Informação</a>
-            </p>
+            <ul>
+                <li><a href="index.html">Introdução</a></li>
+                <li><a href="local.html">Localização</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="info.html">Informação</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a class="active" href="html5-css.html">HTML5 & CCS</a></li>
+              </ul>
         </div>
     </nav>
     <main>
@@ -43,10 +37,13 @@
         <div class="container">
             <h3>HTML5 e CSS</h3>
         </div>
-
-        <section><span>HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet,
-                originalmente proposto por Opera Software. É a quinta versão da linguagem HTML</span></section>
-        <section>
+        <p></p>
+        <section class="container">
+            <span>HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet,
+                originalmente proposto por Opera Software. É a quinta versão da linguagem HTML</span>
+        </section>
+        <p></p>
+        <section class="container">
             <table>
                 <thead>
                     <tr>
@@ -57,30 +54,155 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>&lt;header&gt;</td>
-                        <td>✔</td>
-                        <td>Utilizei o elemento &lt;header&gt; para criar o cabeçalho da página, incluindo o logotipo e
-                            o título.</td>
+                        <td>header</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Utilizei o elemento header para criar o cabeçalho da página, incluindo a imagem e o nome da
+                            cidade escolhida.</td>
                     </tr>
                     <tr>
-                        <td>&lt;nav&gt;</td>
-                        <td>✔</td>
-                        <td>Utilizei o elemento &lt;nav&gt; para criar a barra de navegação da página.</td>
+                        <td>nav</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Utilizei o elemento nav para criar a barra de navegação.</td>
                     </tr>
                     <tr>
-                        <td>&lt;main&gt;</td>
-                        <td>✔</td>
-                        <td>Utilizei o elemento &lt;main&gt; para envolver o conteúdo principal da página.</td>
+                        <td>main</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Utilizei o elemento main para ter o conteúdo principal da página.</td>
                     </tr>
                     <tr>
-                        <td>&lt;article&gt;</td>
-                        <td>✔</td>
-                        <td>Utilizei o elemento &lt;article&gt; para envolver cada um dos artigos da página.</td>
+                        <td>section</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Utilizei o elemento section para separar cada conteúdo na página.</td>
+                    </tr>
+                    <tr>
+                        <td>article</td>
+                        <td><g-emoji class="g-emoji" alias="x"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>
+                        </td>
+                        <td>Não utilizei este elemento article.</td>
+                    </tr>
+                    <tr>
+                        <td>figure</td>
+                        <td><g-emoji class="g-emoji" alias="x"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>
+                        </td>
+                        <td>Não utilizei este elemento figure.</td>
+                    </tr>
+                    <tr>
+                        <td>footer</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Utilizei o elemento footer para criar um rodapé no final da página.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section></section>
+        <p></p>
+        <section class="container">
+            <h2>CSS</h2>
+            <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na
+                linguagem de marcação (HTML ou XML) devem ser apresentados em termos de formatação, de layout. Em um
+                cenário ideal, enquanto o HTML é usado para estruturar os conteúdos, o CSS é utilizado para formatá-los.
+                Dessa forma há uma enorme integração entre o HTML e o CSS.</p>
+
+            <h3>Tipo de seletores CSS</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seletor</th>
+                        <th>Usado?</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Element selectors</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Referenciam as tags HTML que formatam. Por exemplo: p { color: blue; }</td>
+                    </tr>
+                    <tr>
+                        <td>Class selectores</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Com os selectores de classe podemos definir diferentes estilos para o mesmo tipo de elemento
+                            num documento HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>ID selectors</td>
+                        <td><g-emoji class="g-emoji" alias="x"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>
+                        </td>
+                        <td>Definem-se com o sinal cardinal (#) e deve ser usado uma única vez em cada documento HTML.
+                            Pode haver, no entanto, haver mais do que um selector com o mesmo ID, mas não está conforme
+                            as especificações da W3C. O documento pode ser correctamente rendido pelo browser, mas não
+                            será validado. Quando queremos usar vários selectores com o mesmo nome devemos usar classes
+                            em vez de ID.
+                            Os ID são muito usados para definir os elementos estruturais do documento HTML, como é o
+                            caso das DIVs.</td>
+                    </tr>
+                    <tr>
+                        <td>Group selectors</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>É possível agrupar seletores e com isso reduzir o código. Os seletores agrupados devem estar
+                            separados com vírgulas. Exemplo: h1, h2, h3, h4, h5, h6 {
+                            color: #009900; font-family: Georgia, sans-serif;}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Combinadores de seletores CSS</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Combinador</th>
+                        <th>Usado?</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>seletor descendente</td>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
+                        </td>
+                        <td>Padrão: E F</br>
+                            Corresponde a qualquer elemento F que seja um descendente (esteja “dentro”) de um elemento
+                            E. Por exemplo: div p { font-style: italic; }</td>
+                    </tr>
+                    <tr>
+                        <td>seletor de filho</td>
+                        <td><g-emoji class="g-emoji" alias="x"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>
+                        </td>
+                        <td>Padrão: E ~ F</br> Este seletor para combinação de seletores CSS corresponde quando um
+                            elemento F é precedido por um elemento E (não necessariamente de imediato, como no caso de E
+                            > F). Por exemplo: ul > li { list-style-type: none; }</td>
+                    </tr>
+                    <tr>
+                        <td>seletor de irmão anterior</td>
+                        <td><g-emoji class="g-emoji" alias="x"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>
+                        </td>
+                        <td>Seleciona elementos que são irmãos anteriores de outro elemento. Por exemplo: h2 ~ p {
+                            color: red; }</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
     </main>
     <footer>
