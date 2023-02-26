@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Pedro Gonçalves">
-		<meta name="description" content="Website sobre Lisboa">
-		<meta name="keywords" content="Lisboa">
 
-		<link rel="stylesheet" href="estilos.css">
-	</head>
-	<body>
-		<div class="container">
-			<h2>Informação</h2>
-		</div>
-		<p></p>
-		<nav>
-			<div class="container">
-				<ul id="menu">
-					<li><a href="index.html">Introdução</a></li>
-					<li><a href="local.html">Localização</a></li>
-					<li><a href="multimedia.html">Multimedia</a></li>
-					<li><a class="active" href="info.html">Informação</a></li>
-					<li><a href="quizz.html">Quizz</a></li>
-					<li><a  href="html5-css.html">HTML5 & CCS</a></li>
-				  </ul>
-			</div>
-		</nav>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Pedro Gonçalves">
+	<meta name="description" content="Website sobre Lisboa">
+	<meta name="keywords" content="Lisboa">
 
-		<div class="container">
-			
-			<p>
-				<p>
-					<span>O que visitar em Lisboa</span>
-				</p>
-				
-				<table>
-					<tr>
-					  <th>Atração</th>
-					  <th>Descrição</th>
-					</tr>
-					<tr>
-					  <td>Torre de Belém</td>
-					  <td>Fortaleza construída no século XVI, Patrimônio Mundial da UNESCO</td>
-					</tr>
-					<tr>
-					  <td>Mosteiro dos Jerónimos</td>
-					  <td>Mosteiro gótico e renascentista construído no século XVI</td>
-					</tr>
-					<tr>
-					  <td>Castelo de São Jorge</td>
-					  <td>Castelo medieval com vistas panorâmicas da cidade</td>
-					</tr>
-					<tr>
-					  <td>Praça do Comércio</td>
-					  <td>Praça monumental à beira-rio com vistas para o Tejo</td>
-					</tr>
-					<tr>
-					  <td>Bairro Alto</td>
-					  <td>Bairro boêmio com bares, restaurantes e lojas de moda</td>
-					</tr>
-				  </table>
-			</p>
-			
-		</div>
+	<link rel="stylesheet" href="estilos.css">
 
-	</body>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+	</style>
+</head>
+
+<body class="container">
+	<header>
+		<h1>Lisboa</h1>
+		<figure>
+			<img src="images/lisboa.jpg" alt="Lisboa">
+			<figcaption>Fig1. - Cidade Lisboa.</figcaption>
+		</figure>
+	</header>
+	<p></p>
+	<nav>
+		<ul id="menu">
+			<li><a href="index.html">Introdução</a></li>
+			<li><a href="local.html">Localização</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a class="active" href="info.html">Informação</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li><a href="html5-css.html">HTML5 & CCS</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h2>Informação</h2>
+		<p>
+			<span>O que visitar em Lisboa</span>
+		</p>
+
+		<table>
+			<tr>
+				<th>Atração</th>
+				<th>Descrição</th>
+			</tr>
+			<tr>
+				<td rowspan="2">Torre de Belém</td>
+				<td>Fortaleza construída no século XVI</td>
+			</tr>
+			<tr>
+				<td>Patrimônio Mundial da UNESCO</td>
+			</tr>
+			<tr>
+				<td>Mosteiro dos Jerónimos</td>
+				<td>Mosteiro gótico e renascentista construído no século XVI</td>
+			</tr>
+			<tr>
+				<td>Castelo de São Jorge</td>
+				<td>Castelo medieval com vistas panorâmicas da cidade</td>
+			</tr>
+			<tr>
+				<td colspan="2">Praça do Comércio - Praça monumental à beira-rio com vistas para o Tejo</td>
+			</tr>
+			<tr>
+				<td>Bairro Alto</td>
+				<td>Bairro boêmio com bares, restaurantes e lojas de moda</td>
+			</tr>
+		</table>
+		</p>
+	</section>
+	<footer>
+		<span>Pedro Gonçalves - a22201209 - ULHT - 2023</span>
+	</footer>
+</body>
+
 </html>

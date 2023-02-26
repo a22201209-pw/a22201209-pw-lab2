@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Pedro Gonçalves">
-		<meta name="description" content="Website sobre Lisboa">
-		<meta name="keywords" content="Lisboa">
 
-		<link rel="stylesheet" href="estilos.css">
-	</head>
-	<body>
-		<div class="container" >
-			<h2>Multimedia</h2>
-		</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Pedro Gonçalves">
+	<meta name="description" content="Website sobre Lisboa">
+	<meta name="keywords" content="Lisboa">
 
-		<nav>
-			<div class="container">
-				<ul>
-					<li><a href="index.html">Introdução</a></li>
-					<li><a href="local.html">Localização</a></li>
-					<li><a class="active" href="multimedia.html">Multimedia</a></li>
-					<li><a href="info.html">Informação</a></li>
-					<li><a href="quizz.html">Quizz</a></li>
-					<li><a href="html5-css.html">HTML5 & CCS</a></li>
-				  </ul>
-			</div>
-		</nav>
+	<link rel="stylesheet" href="estilos.css">
 
-		<div class="container">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+	</style>
+</head>
 
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/z9SHTjF2MvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		</div>
-		
-	</body>
+<body class="container">
+	<h2>Multimedia</h2>
+
+	<nav>
+		<ul id="menu">
+			<li><a href="index.html">Introdução</a></li>
+			<li><a href="local.html">Localização</a></li>
+			<li><a class="active" href="multimedia.html">Multimedia</a></li>
+			<li><a href="info.html">Informação</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li><a href="html5-css.html">HTML5 & CCS</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h3 id="video">Video sobre a cidade de Lisboa</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/z9SHTjF2MvQ"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe>
+		</section>
+		<section>
+			<h3 id="fotos">Fotos</h3>
+			<p>
+				<a href="images/lisboa1_grande.jpeg" target="foto">
+					<img src="images/lisboa1_pequena.jpeg" alt="Imagem 1 de Lisboa" width="100">
+				</a>
+				<a href="images/lisboa2_grande.jpg" target="foto">
+					<img src="images/lisboa2_pequena.jpg" alt="Imagem 2 de Lisboa" width="100">
+				</a>
+				<a href="images/lisboa3_grande.jpg" target="foto">
+					<img src="images/lisboa3_pequena.jpg" alt="Imagem 3 de Lisboa" width="100">
+				</a>
+			</p>
+
+			<iframe name="foto" width="800" height="600" src="images/lisboa1_grande.jpeg"></iframe>
+			<iframe name="foto" width="800" height="600" src="images/lisboa2_grande.jpg"></iframe>
+			<iframe name="foto" width="800" height="600" src="images/lisboa3_grande.jpg"></iframe>
+		</section>
+		<section>
+			<h3 id="poema">Poema</h3>
+			<p></p>
+			<p style="text-align: justify;">Lisboa à beira-mar, cheia de vistas,<br>
+				Ó Lisboa das meigas Procissões!<br>
+				Ó Lisboa de Irmãs e de fadistas!<br>
+				Ó Lisboa dos líricos pregões…<br>
+				Lisboa com o Tejo das Conquistas,<br>
+				Mais os ossos prováveis de Camões!<br>
+				Ó Lisboa de mármore, Lisboa!<br>
+				Quem nunca te viu, não viu coisa boa…</p>
+			<p style="text-align: justify;">Ai canta, canta ao luar, minha guitarra,<br>
+				A Lisboa dos Poetas Cavaleiros!<br>
+				Galeras doidas por soltar a amarra,<br>
+				Cidades de morenos marinheiros,<br>
+				Com navios entrando e saindo a barra<br>
+				De proa para países estrangeiros!<br>
+				Uns pra França, acenando Adeus! Adeus!<br>
+				Outros pras Índias, outros… sabe-o Deus!</p>
+			<p style="text-align: justify;">Ó Lisboa das ruas misteriosas!<br>
+				Da Triste Feia, de João de Deus,<br>
+				Beco da Índia, Rua das Fermosas,<br>
+				Beco do Fala-Só (os versos meus…)<br>
+				E outra rua que eu sei de duas Rosas,<br>
+				Beco do Imaginário, dos Judeus,<br>
+				Travessa (julgo eu) das Isabéis,<br>
+				E outras mais que eu ignoro e vós sabeis.<br>
+				(…)</p>
+			<h6 style="text-align: justify;"><span class="ez-toc-section"
+					id="Antonio_Nobre_in_Despedidas_1895-1899_1902"
+					ez-toc-data-id="#Antonio_Nobre_in_Despedidas_1895-1899_1902"></span>António Nobre, <em>in</em>
+				Despedidas: 1895-1899, 1902<span class="ez-toc-section-end"></span></h6>
+			<p>&nbsp;</p>
+		</section>
+		<p>
+			<ul>
+				<li><a href="#fotos">Fotografias</a></li>
+				<li><a href="#video">Vídeo</a></li>
+				<li><a href="#poema">Poema</a></li>
+			  </ul>
+		</p>
+	</main>
+	<p></p>
+	<footer>
+		<span>Pedro Gonçalves - a22201209 - ULHT - 2023</span>
+	</footer>
+</body>
+
 </html>

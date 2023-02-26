@@ -8,47 +8,44 @@
     <meta name="keywords" content="Lisboa">
 
     <link rel="stylesheet" href="estilos.css">
+
+    <style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+	</style>
 </head>
 
-<body>
+<body class="container">
     <header>
-        <div class="container">
-            <h1>Lisboa</h1>
-            <figure>
-                <img src="images/lisboa.jpg" alt="Lisboa">
-                <figcaption>Fig1. - Cidade Lisboa.</figcaption>
-            </figure>
-        </div>
+        <h1>Lisboa</h1>
+        <figure>
+            <img src="images/lisboa.jpg" alt="Lisboa">
+            <figcaption>Fig1. - Cidade Lisboa.</figcaption>
+        </figure>
     </header>
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Introdução</a></li>
-                <li><a href="local.html">Localização</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="info.html">Informação</a></li>
-                <li><a href="quizz.html">Quizz</a></li>
-                <li><a class="active" href="html5-css.html">HTML5 & CCS</a></li>
-              </ul>
-        </div>
+        <ul id="menu">
+            <li><a href="index.html">Introdução</a></li>
+            <li><a href="local.html">Localização</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="info.html">Informação</a></li>
+            <li><a href="quizz.html">Quizz</a></li>
+            <li><a class="active" href="html5-css.html">HTML5 & CCS</a></li>
+        </ul>
     </nav>
     <main>
-
-        <div class="container">
-            <h3>HTML5 e CSS</h3>
-        </div>
         <p></p>
-        <section class="container">
+        <section>
+            <h3>HTML5 e CSS</h3>
             <span>HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet,
                 originalmente proposto por Opera Software. É a quinta versão da linguagem HTML</span>
         </section>
         <p></p>
-        <section class="container">
+        <section>
             <table>
                 <thead>
                     <tr>
                         <th>Elemento Semântico</th>
-                        <th>Usou?</th>
+                        <th>Usado?</th>
                         <th>Descrição</th>
                     </tr>
                 </thead>
@@ -91,10 +88,10 @@
                     </tr>
                     <tr>
                         <td>figure</td>
-                        <td><g-emoji class="g-emoji" alias="x"
-                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>
+                        <td><g-emoji class="g-emoji" alias="heavy_check_mark"
+                                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png">✔</g-emoji>
                         </td>
-                        <td>Não utilizei este elemento figure.</td>
+                        <td>Utilizei o elemento figure para mostrar a imagem da cidade de Lisboa na página inicial</td>
                     </tr>
                     <tr>
                         <td>footer</td>
@@ -107,7 +104,7 @@
             </table>
         </section>
         <p></p>
-        <section class="container">
+        <section>
             <h2>CSS</h2>
             <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na
                 linguagem de marcação (HTML ou XML) devem ser apresentados em termos de formatação, de layout. Em um
@@ -203,8 +200,8 @@
                 </tbody>
             </table>
         </section>
-
     </main>
+    <p></p>
     <footer>
         <span>Pedro Gonçalves - a22201209 - ULHT - 2023</span>
     </footer>

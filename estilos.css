@@ -22,7 +22,7 @@ th {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: grey;
 }
 
 #menu li {
@@ -38,9 +38,67 @@ th {
 }
 
 #menu li a:hover {
-    background-color: #111;
+    background-color: green;
 }
 
-.active {
+/* unvisited link */
+#menu li a:link {
+    color: darkorange;
+}
+
+/* visited link */
+#menu li a:visited {
+    color: white;
+}
+
+#menu .active {
     color: yellow;
+}
+
+#quizzinfo {
+    background-color: darkgoldenrod;
+}
+
+#p1quizz {
+    background-color: chocolate;
+}
+
+#p2quizz {
+    background-color: darkslateblue;
+}
+
+#p3quizz {
+    background-color: darkgray;
+}
+
+#p4quizz {
+    background-color: darkgreen;
+}
+
+#p5quizz {
+    background-color: darkslategrey;
+}
+
+#p6quizz {
+    background-color: darkblue
+}
+
+#p7quizz {
+    background-color: grey;
+}
+
+#p8quizz {
+    background-color: olivedrab;
+}
+
+#p8quizz {
+    background-color: honeydew;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    padding-bottom: 2rem;
 }
